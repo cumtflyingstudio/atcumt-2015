@@ -1,0 +1,63 @@
+# flyingstudio.github.io
+> 文档分析：Claude Sonnet 4.5
+> 生成日期：2025-11-02
+
+https://www.atcumt.com/2015
+翔工作室主页静态前端站点,（用于 GitHub Pages）
+
+## 项目简介
+
+这是一个基于静态文件的前端网站仓库，包含主页 `index.html` 及相关的资源目录（`css/`、`js/`、`img/`、`font/`、`video/`）,适合部署到 GitHub Pages 或任意静态站点托管服务。
+
+## 快速开始
+
+1. 克隆仓库并进入目录：
+   - git clone https://github.com/cumtflyingstudio/flyingstudio.github.io.git
+   - cd flyingstudio.github.io
+2. 本地预览（任意静态文件服务器）：
+   - Python 3: `python3 -m http.server 8000` 然后访问 http://localhost:8000
+   - 或使用 VS Code Live Server 等工具。
+3. 部署：将 `master` / `main` 分支推送到 GitHub，将仓库设置为 GitHub Pages 源（通常为 `gh-pages` 或 `master`/`main` 下的 `/` 或 `/docs`）。
+
+## 项目架构
+
+```
+flyingstudio.github.io/
+├── index.html            # 站点首页
+├── css/                  # 样式（reset + index）
+│   ├── reset.css
+│   ├── index.css
+│   └── index - 副本.css  # 副本/备份样式文件
+├── js/                   # 前端脚本
+│   ├── index.js
+│   ├── function.js
+│   └── screenEnterLeave.js
+├── font/                 # 字体文件
+│   └── ebrimabd.ttf
+├── img/                  # 图片资源（logo、封面、图标等）
+├── video/                # 视频资源 (1.ogv)
+└── README.md             # 本文件
+```
+
+### 核心功能/目录
+
+#### `index.html`
+ - 作为单页展示入口，引用 `css` 和 `js` 资源，负责页面布局和交互触发。
+
+#### `css/`
+ - `reset.css` 用于重置浏览器默认样式，`index.css` 为主样式表。目录中存在 `index - 副本.css`，看起来是样式备份，应在开发流程中清理或合并。
+
+#### `js/`
+ - `index.js`：主脚本，负责页面交互逻辑
+ - `function.js`：通用辅助函数
+ - `screenEnterLeave.js`：可能用于视口/动画进入离开效果
+
+#### `img/` 和 `font/`
+ - 图片与字体用于视觉展示和品牌标识，注意检查是否有未使用或重复资源以减小站点体积。
+
+#### `video/`
+ - 存放媒体资源（例如 `1.ogv`），在网页中使用视频时请注意跨浏览器兼容性（考虑提供 MP4/WebM 格式备用）。
+
+### 工程化配置
+
+当前仓库为纯静态站点，未发现构建工具（如 npm、webpack、gulp 等）或 CI 配置（如 GitHub Actions）。如需自动化部署和压缩/打包，可考虑引入简单的 npm 脚本或 GitHub Actions。
