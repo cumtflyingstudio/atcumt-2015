@@ -61,3 +61,7 @@ flyingstudio.github.io/
 ### 工程化配置
 
 当前仓库为纯静态站点，未发现构建工具（如 npm、webpack、gulp 等）或 CI 配置（如 GitHub Actions）。如需自动化部署和压缩/打包，可考虑引入简单的 npm 脚本或 GitHub Actions。
+
+## 许可证
+
+本项目采用 Apache License 2.0 许可，详见仓库根目录的 `LICENSE` 文件。
