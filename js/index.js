@@ -452,14 +452,3 @@ function showWeiXin() {
 		startMove(oWeiXin,{'opacity':0},6);
 	}
 };
-
-//qq空间时空轴信息删除代码
-var a = document.getElementsByClassName('ui_ico ico_delete j_delete');
-var i = 0;
-var timer = setInterval(function() {
-	a[i++].click();
-	setTimeout(function() {
-		var b = document.getElementsByClassName('qz_dialog_layer_btn qz_dialog_layer_sub')[0];
-		b.click();
-	}, 500);
-}, 1000);
