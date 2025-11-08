@@ -4,7 +4,7 @@
 
 翔工作室主页2015：https://www.atcumt.com/atcumt-2015
 
-|![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-moblie.png)|![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-pc.png)|
+|![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-m.png)|![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-pc.png)|
 |:---:|:---:|
 
 ## 项目简介
@@ -14,7 +14,7 @@
 ## 项目架构
 
 ```
-flyingstudio.github.io/
+atcumt-2015/
 ├── index.html            # 站点首页
 ├── css/                  # 样式（reset + index）
 │   ├── reset.css
